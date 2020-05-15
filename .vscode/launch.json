@@ -1,0 +1,27 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+     {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "runtimeArgs": [
+       "--remote-debugging-port=9222",
+       "--disable-web-security"
+      ],
+      "port": 9222
+     },
+     {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "webRoot": "${workspaceRoot}/src/",
+      "sourceMaps": true
+     }
+   
+    ]
+   }
